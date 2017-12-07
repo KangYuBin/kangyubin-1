@@ -24,6 +24,10 @@ public class DynamicBeat extends JFrame {
 		
 		//요기다가 게임 첫 시작 이미지 넣기!!!(첫 시작화면)
 		introBackground = new ImageIcon(Main.class.getResource("../images/introBackground.jpg")).getImage();
+	
+		//시작화면에서 정상적으로 시작음악을 재생!!(직접 종료시키기 전까지 음악 반복 재생)
+		Music introMusic = new Music("introMusic.mp3",true);
+		introMusic.start();
 	}
 	
 	//JFrame에서 가장 첫번째로 화면을 그려주는 함수
